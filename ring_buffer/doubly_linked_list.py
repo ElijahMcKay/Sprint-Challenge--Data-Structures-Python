@@ -84,7 +84,7 @@ class DoublyLinkedList:
             self.tail.next = new_node
             self.tail = new_node
 
-    """Removes the List's current tail node, making the 
+    """Removes the List's current tail node, making the
     current tail's previous node the new tail of the List.
     Returns the value of the removed Node."""
     def remove_from_tail(self):
@@ -92,7 +92,7 @@ class DoublyLinkedList:
         self.delete(self.tail)
         return value
 
-    """Removes the input node from its current spot in the 
+    """Removes the input node from its current spot in the
     List and inserts it as the new head node of the List."""
     def move_to_front(self, node):
         if node is self.head:
